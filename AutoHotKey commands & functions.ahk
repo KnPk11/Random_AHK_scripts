@@ -50,7 +50,7 @@ GoTo Restart
 ; An alternative function for pausing the script
 `::Function_Pause()
 
-Function_Pause()
+pause()
 {
 	If A_IsPaused = 0
 		Pause, ON
@@ -63,7 +63,7 @@ Function_Pause()
 ; Copy, reprocess in-memory, paste the new text. For example replace the line-breaks
 `::function_tablename()
 
-function_tablename()
+text_replace()
 {
 	Send, {LButton 2}
 	Send, ^c
